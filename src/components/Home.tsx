@@ -74,7 +74,7 @@ const photos = [
 ]
 
 class Home extends React.Component {
-  render() {
+  public render() {
     return <Gallery photos={photos} direction={"column"}/>
   }
 }
