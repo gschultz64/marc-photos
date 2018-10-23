@@ -1,7 +1,7 @@
 import * as React from "react";
 
 class Store extends React.Component{
-  render() {
+  public render() {
     return (
       <div>
         <h1>Marc Schultz Photography Store</h1>

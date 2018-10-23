@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as Gallery from "react-photo-gallery";
 
-export interface Props {
+// export interface Props {
   
-}
+// }
 
 const photos = [
   {
@@ -12,71 +12,36 @@ const photos = [
     height: 3
   },
   {
-    src: "",
+    src: ".../public/images/beachshell.jpg",
     width: 1,
     height: 1
   },
   {
-    src: "",
+    src: ".../public/images/beachshell.jpg",
     width: 3,
     height: 4
   },
   {
-    src: "",
+    src: ".../public/images/beachshell.jpg",
     width: 3,
     height: 4
   },
   {
-    src: "",
+    src: ".../public/images/beachshell.jpg",
     width: 4,
     height: 3
-  },
-  {
-    src: "",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "",
-    width: 4,
-    height: 3
-  },
+  }
 ]
 
 class Home extends React.Component {
+  constructor(props:string) {
+    super(props)
+  }
+
   public render() {
-    return <Gallery photos={photos} direction={"column"}/>
+    return (
+      <Gallery photos={photos} direction={"column"}/>
+    )
   }
 }
-
 export default Home;
