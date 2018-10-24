@@ -2,11 +2,7 @@ import * as React from "react";
 import "./App.css";
 import { GoogleFont, TypographyStyle } from "react-typography";
 import typography from "../src/utils/typography";
-import {
-  BrowserRouter as Router,
-  Route,
-  NavLink
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 // import Home from "./components/Home";
 import About from "./components/About";
 import Store from "./components/Store";
@@ -15,15 +11,15 @@ const routes = [
   {
     path: "/",
     exact: true,
-    main: () => <h1>Marc Schultz Photography</h1>// <Home/>
+    main: () => <h1>Marc Schultz Photography</h1> // <Home/>
   },
   {
     path: "/store",
-    main: () => <Store/>
+    main: () => <Store />
   },
   {
     path: "/about",
-    main: () => <About/>
+    main: () => <About />
   }
 ];
 
