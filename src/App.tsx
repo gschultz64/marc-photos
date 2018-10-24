@@ -5,49 +5,70 @@ import typography from "../src/utils/typography";
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  NavLink,
-  Switch
+  NavLink
 } from "react-router-dom";
-import Home from "./components/Home";
+// import Home from "./components/Home";
 import About from "./components/About";
 import Store from "./components/Store";
+
+const routes = [
+  {
+    path: "/",
+    exact: true,
+    main: () => <h1>Marc Schultz Photography</h1>// <Home/>
+  },
+  {
+    path: "/store",
+    main: () => <Store/>
+  },
+  {
+    path: "/about",
+    main: () => <About/>
+  }
+];
 
 class App extends React.Component {
   public render() {
     return (
-      <React.Fragment>
-        <TypographyStyle typography={typography} />
-        <GoogleFont typography={typography} />
+      <Router>
         <div className="App">
-          <Router>
-            <Switch>
-              <header>
-                <Link to="/">
-                  <h1 className="App-title">Marc Schultz Photography</h1>
-                </Link>
-              </header>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/store" component={Store} />
-              <div>
-                <ul>
-                  <li>
-                    <NavLink to="/">Home</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/about">About</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/store">Topics</NavLink>
-                  </li>
-                </ul>
-                <hr />
-              </div>
-            </Switch>
-          </Router>
+          <TypographyStyle typography={typography} />
+          <GoogleFont typography={typography} />
+          <div
+            style={{
+              padding: "10px",
+              width: "20%"
+            }}
+          >
+            <ul style={{ listStyleType: "none", padding: 0 }}>
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/store">Store</NavLink>
+              </li>
+            </ul>
+
+            {routes.map((route, index) => (
+              <Route key={index} path={route.path} exact={route.exact} />
+            ))}
+          </div>
+
+          <div style={{ flex: 1, padding: "10px" }}>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+              />
+            ))}
+          </div>
         </div>
-      </React.Fragment>
+      </Router>
     );
   }
 }

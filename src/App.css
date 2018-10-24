@@ -3,7 +3,9 @@ body {
 }
 
 .App {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  color: white;
 }
 
 .App-title {
@@ -11,4 +13,3 @@ body {
   margin: 10px;
   color: white;
 }
-
