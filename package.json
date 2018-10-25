@@ -22,7 +22,14 @@
     "typography": "^0.16.17",
     "typography-theme-noriega": "^0.15.10"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "scripts": {
+    "precommit": "lint-staged",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "format": "prettier --write '**/*.js'",
