@@ -39,6 +39,10 @@ See the section about [deployment](#deployment) for more information.
 
 ## Other Information
 
+images hosted on cloudinary (temporary)
+
+plan to integrate Strapi for CMS dashboard
+
 ### Proxy Server
 
 server.js - localhost:9000
