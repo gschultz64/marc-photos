@@ -2,8 +2,13 @@ import * as React from "react";
 import "./App.css";
 import { GoogleFont, TypographyStyle } from "react-typography";
 import typography from "../src/utils/typography";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-// import Home from "./components/Home";
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Link
+} from "react-router-dom";
+import Home from "./components/Home";
 import About from "./components/About";
 import Store from "./components/Store";
 
@@ -11,7 +16,7 @@ const routes = [
   {
     path: "/",
     exact: true,
-    main: () => <h1>Marc Schultz Photography</h1> // <Home/>
+    main: () => <Home />
   },
   {
     path: "/store",
@@ -37,6 +42,11 @@ class App extends React.Component {
             }}
           >
             <ul style={{ listStyleType: "none", padding: 0 }}>
+              <li>
+                <Link to="/" className="App-logo">
+                  <h1>Marc Schultz Photography</h1>
+                </Link>
+              </li>
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
