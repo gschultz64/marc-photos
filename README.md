@@ -44,3 +44,11 @@ See the section about [deployment](#deployment) for more information.
 server.js - localhost:9000
 
 Send Stripe charges
+
+### Node Modules
+
+- [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs)
+- [react-photo-gallery](http://neptunian.github.io/react-photo-gallery/)
+- [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
+- [stripe, react-stripe-elements](https://stripe.com/docs/development#node)
+- [typography](http://kyleamathews.github.io/typography.js/)
