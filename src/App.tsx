@@ -8,6 +8,7 @@ import {
   NavLink,
   Link
 } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Home from "./components/Home";
 import About from "./components/About";
 import Store from "./components/Store";
@@ -33,6 +34,17 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
+          <Helmet>
+            <meta charSet="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            />
+            <meta name="theme-color" content="#000000" />
+            <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+            <script src="https://js.stripe.com/v3/" />
+            <title>Marc Schultz Photography</title>
+          </Helmet>
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
           <div

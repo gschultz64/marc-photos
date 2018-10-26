@@ -56,3 +56,4 @@ Send Stripe charges
 - [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
 - [stripe, react-stripe-elements](https://stripe.com/docs/development#node)
 - [typography](http://kyleamathews.github.io/typography.js/)
+- [react-helmet](https://github.com/nfl/react-helmet)
