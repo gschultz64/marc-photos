@@ -100,7 +100,11 @@ class Home extends React.Component {
   }
 
   public render() {
-    return <Gallery photos={photos} direction={"column"} />;
+    return (
+      <a>
+      <Gallery photos={photos} direction={"column"} />
+      </a>
+    )
   }
 }
 export default Home;
