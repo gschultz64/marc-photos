@@ -21,7 +21,8 @@
     "react-typography": "^0.16.13",
     "stripe": "^6.12.1",
     "typography": "^0.16.17",
-    "typography-theme-noriega": "^0.15.10"
+    "typography-theme-noriega": "^0.15.10",
+    "typography-theme-stow-lake": "^0.15.10"
   },
   "scripts": {
     "start": "react-scripts-ts start",
