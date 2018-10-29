@@ -6,6 +6,8 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Clone/Download Instructions
 
+- git clone git@github.com:gschultz64/marc-photos.git
+- cd marc-photos
 - install node.js [offical node.js website](https://nodejs.org/en/)
 - npm install
 - npm start
