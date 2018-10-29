@@ -51,6 +51,8 @@ server.js - localhost:9000
 
 Send Stripe charges
 
+Use "node server.js" to start proxy server
+
 ### Node Modules
 
 - [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs)
@@ -59,3 +61,4 @@ Send Stripe charges
 - [stripe, react-stripe-elements](https://stripe.com/docs/development#node)
 - [typography](http://kyleamathews.github.io/typography.js/)
 - [react-helmet](https://github.com/nfl/react-helmet)
+- [cloudinary-react](https://cloudinary.com/documentation/react_integration)
