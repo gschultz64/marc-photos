@@ -41,7 +41,6 @@ class App extends React.Component {
               content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
             <meta name="theme-color" content="#000000" />
-            <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
             <script src="https://js.stripe.com/v3/" />
             <title>Marc Schultz Photography</title>
           </Helmet>
