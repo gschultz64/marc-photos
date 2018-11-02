@@ -5,13 +5,13 @@ import typography from "../src/utils/typography";
 import {
   BrowserRouter as Router,
   Route,
-  NavLink,
-  Link
+  NavLink
 } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Home from "./components/Home";
 import About from "./components/About";
 import Store from "./components/Store";
+// import Header from "./components/Header";
 
 const routes = [
   {
@@ -41,7 +41,6 @@ class App extends React.Component {
               content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
             <meta name="theme-color" content="#000000" />
-            <script src="https://js.stripe.com/v3/" />
             <title>Marc Schultz Photography</title>
           </Helmet>
           <TypographyStyle typography={typography} />
@@ -49,15 +48,11 @@ class App extends React.Component {
           <div
             style={{
               padding: "10px",
-              width: "20%"
+              width: "20%", 
             }}
           >
             <ul style={{ listStyleType: "none", padding: 0 }}>
-              <li>
-                <Link to="/" className="App-logo">
-                  <h1>Marc Schultz Photography</h1>
-                </Link>
-              </li>
+              
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
