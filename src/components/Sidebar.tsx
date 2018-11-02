@@ -1,11 +1,6 @@
 import * as React from "react";
-import "../App.css";
-import {
-  Route,
-  NavLink,
-  Link
-} from "react-router-dom";
-// import { Helmet } from "react-helmet";
+import "../App.min.css";
+import { Route, NavLink } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Store from "./Store";
@@ -37,11 +32,6 @@ class App extends React.Component {
 
         <ul style={ {listStyleType: "none", padding: 0} }>
           <li>
-            <Link to="/" className="App-logo">
-              <h1>Marc Schultz Photography</h1>
-            </Link>
-          </li>
-          <li>
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
@@ -52,12 +42,10 @@ class App extends React.Component {
           </li>
         </ul>
 
-        <div className="sidebar__footer">
-          <div className="icon-container">
-            <a href="#" target='_blank' rel="noopener noreferrer"><i className="fab fa-instagram icon-container__icons"></i></a>
-            <a href="#" target='_blank' rel="noopener noreferrer"><i className="fab fa-github icon-container__icons"></i></a>
-            <a href="#" target='_blank' rel="noopener noreferrer"><i className="fab fa-linkedin icon-container__icons"></i></a>
-          </div>
+        <div className="icon-container">
+          <a href="#" target='_blank' rel="noopener noreferrer"><i className="fab fa-instagram icon-container__icons"></i></a>
+          <a href="#" target='_blank' rel="noopener noreferrer"><i className="fab fa-github icon-container__icons"></i></a>
+          <a href="#" target='_blank' rel="noopener noreferrer"><i className="fab fa-linkedin icon-container__icons"></i></a>
         </div>
 
         {routes}

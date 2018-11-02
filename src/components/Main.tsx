@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../App.css";
+import "../App.min.css";
 import { Route } from "react-router-dom";
 import Home from "./Home";
 import Store from "./Store";
