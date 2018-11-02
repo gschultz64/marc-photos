@@ -33,7 +33,7 @@ class App extends React.Component {
     ));
 
     return (
-      <div style={ {padding: "10px", width: "20%"} }>
+      <div className="sidebar" style={ {padding: "10px", width: "15%"} }>
 
         <ul style={ {listStyleType: "none", padding: 0} }>
           <li>
