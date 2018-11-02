@@ -6,6 +6,8 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Clone/Download Instructions
 
+- git clone git@github.com:gschultz64/marc-photos.git or [https://github.com/gschultz64/marc-photos.git](https://github.com/gschultz64/marc-photos.git)
+- cd marc-photos
 - install node.js [offical node.js website](https://nodejs.org/en/)
 - npm install
 - npm start
@@ -49,6 +51,8 @@ server.js - localhost:9000
 
 Send Stripe charges
 
+Use "node server.js" to start proxy server
+
 ### Node Modules
 
 - [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs)
@@ -57,3 +61,4 @@ Send Stripe charges
 - [stripe, react-stripe-elements](https://stripe.com/docs/development#node)
 - [typography](http://kyleamathews.github.io/typography.js/)
 - [react-helmet](https://github.com/nfl/react-helmet)
+- [cloudinary-react](https://cloudinary.com/documentation/react_integration)

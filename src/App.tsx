@@ -12,10 +12,10 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-
+      
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
-
+      
           <div className="entire-page">
             <Topbar />
             <div className="page-contents">
