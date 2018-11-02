@@ -1,18 +1,16 @@
 import * as React from "react";
-import "./App.css";
-import typography from "../src/utils/typography";
+import "../App.css";
 import {
-  BrowserRouter as Router,
   Route,
   NavLink,
   Link
 } from "react-router-dom";
 // import { Helmet } from "react-helmet";
-import Home from "./components/Home";
-import About from "./components/About";
-import Store from "./components/Store";
+import Home from "./Home";
+import About from "./About";
+import Store from "./Store";
 
-const routes = [
+const routesMap = [
   {
     path: "/",
     exact: true,
@@ -30,7 +28,7 @@ const routes = [
 
 class App extends React.Component {
   public render() {
-    const routes = routes.map((route, index) => (
+    const routes = routesMap.map((route, index) => (
       <Route key={index} path={route.path} exact={route.exact} />
     ));
 

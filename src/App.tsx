@@ -5,15 +5,14 @@ import typography from "../src/utils/typography";
 import {
   BrowserRouter as Router,
   Route,
-  NavLink,
-  Link
-} from "react-router-dom";
+
+  } from "react-router-dom";
 import Sidebar from './components/Sidebar';
 import Home from "./components/Home";
 import About from "./components/About";
 import Store from "./components/Store";
 
-const routes = [
+const routesMap = [
   {
     path: "/",
     exact: true,
@@ -31,7 +30,7 @@ const routes = [
 
 class App extends React.Component {
   public render() {
-    const routes =  routes.map((route, index) => (
+    const routes =  routesMap.map((route, index) => (
                       <Route
                         key={index}
                         path={route.path}
