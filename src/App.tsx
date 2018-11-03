@@ -1,84 +1,29 @@
 import * as React from "react";
-import "./App.css";
+import "./App.min.css";
 import { GoogleFont, TypographyStyle } from "react-typography";
 import typography from "../src/utils/typography";
-import {
-  BrowserRouter as Router,
-  Route,
-  NavLink
-} from "react-router-dom";
-import { Helmet } from "react-helmet";
-import Home from "./components/Home";
-import About from "./components/About";
-import Store from "./components/Store";
-// import Header from "./components/Header";
-
-const routes = [
-  {
-    path: "/",
-    exact: true,
-    main: () => <Home />
-  },
-  {
-    path: "/store",
-    main: () => <Store />
-  },
-  {
-    path: "/about",
-    main: () => <About />
-  }
-];
+import { BrowserRouter as Router } from "react-router-dom";
+import Sidebar from './components/Sidebar';
+import Main from "./components/Main";
+import { Topbar } from "./components/Topbar";
 
 class App extends React.Component {
   public render() {
     return (
       <Router>
         <div className="App">
-          <Helmet>
-            <meta charSet="utf-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1, shrink-to-fit=no"
-            />
-            <meta name="theme-color" content="#000000" />
-            <title>Marc Schultz Photography</title>
-          </Helmet>
+      
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
-          <div
-            style={{
-              padding: "10px",
-              width: "20%", 
-            }}
-          >
-            <ul style={{ listStyleType: "none", padding: 0 }}>
-              
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about">About</NavLink>
-              </li>
-              <li>
-                <NavLink to="/store">Store</NavLink>
-              </li>
-            </ul>
-
-            {routes.map((route, index) => (
-              <Route key={index} path={route.path} exact={route.exact} />
-            ))}
+      
+          <div className="entire-page">
+            <Topbar />
+            <div className="page-contents">
+              <Sidebar />
+              <Main />
+            </div>
           </div>
 
-          <div style={{ flex: 1, padding: "10px" }}>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                component={route.main}
-              />
-            ))}
-          </div>
         </div>
       </Router>
     );
