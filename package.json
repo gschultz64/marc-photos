@@ -8,6 +8,7 @@
     "@types/react-stripe-elements": "^1.1.8",
     "@types/stripe": "^6.0.3",
     "@types/typography": "^0.16.0",
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "classnames": "^2.2.6",
     "cloudinary-react": "^1.0.6",

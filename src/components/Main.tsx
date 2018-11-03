@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Home from "./Home";
 import Store from "./Store";
 import About from "./About";
+import Test from "./Test";
 
 const routesMap = [
   {
@@ -18,6 +19,10 @@ const routesMap = [
   {
     path: "/about",
     main: () => <About />
+  },
+  {
+    path: "/test",
+    main: () => <Test />
   }
 ];
 

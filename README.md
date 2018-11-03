@@ -43,7 +43,13 @@ See the section about [deployment](#deployment) for more information.
 
 images hosted on cloudinary (temporary)
 
-plan to integrate Strapi for CMS dashboard
+plan to integrate [Strapi](https://strapi.io/documentation/3.x.x/getting-started/quick-start.html) for CMS dashboard
+
+- Strapi is installed in the 'CMS' directory, see the Strapi quick start guide to get your local version working
+
+### Database
+
+**PostgreSQL**: marcDb
 
 ### Proxy Server
 
