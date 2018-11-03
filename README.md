@@ -47,6 +47,8 @@ plan to integrate [Strapi](https://strapi.io/documentation/3.x.x/getting-started
 
 - Strapi is installed in the 'CMS' directory, see the Strapi quick start guide to get your local version working
 
+[Sass](https://sass-lang.com)
+
 ### Database
 
 **PostgreSQL**: marcDb
