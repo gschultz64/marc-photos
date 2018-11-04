@@ -43,9 +43,9 @@ See the section about [deployment](#deployment) for more information.
 
 images hosted on cloudinary (temporary)
 
-plan to integrate [Strapi](https://strapi.io/documentation/3.x.x/getting-started/quick-start.html) for CMS dashboard
+**Integrate [Strapi](https://strapi.io/documentation/3.x.x/getting-started/quick-start.html) for CMS dashboard**
 
-- Strapi is installed in the 'CMS' directory, see the Strapi quick start guide to get your local version working
+- Click the above link to follow the Strapi quick start guide. I created a strapi project called "cms" in the marc-photos project, and we'll both need to set up our local versions for development. 
 
 [Sass](https://sass-lang.com)
 
