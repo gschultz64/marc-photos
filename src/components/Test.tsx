@@ -11,6 +11,8 @@ axios
   .then(response => {
     // Handle success.
     console.log('Well done, here is the list of products: ', response.data);
+    // for each item in response.data
+    // file location: cms/public/uploads/ + image.hash + .jpg
   })
   .catch(error => {
     // Handle error.

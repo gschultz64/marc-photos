@@ -3,11 +3,12 @@ import Gallery from "react-photo-gallery";
 
 const photos = [
   {
-    src:
-      "https://res.cloudinary.com/dt0tfb4ni/image/upload/v1540582370/beachshell.jpg",
+    src: 
+      ".../cms/public/uploads/2e77b69d0e374f11b3d3bce3b5900520.jpg",
     width: 1,
     height: 1
   },
+  // https://res.cloudinary.com/dt0tfb4ni/image/upload/v1540582370/beachshell.jpg
   {
     src:
       "https://res.cloudinary.com/dt0tfb4ni/image/upload/v1540582357/countryroad.jpg",
